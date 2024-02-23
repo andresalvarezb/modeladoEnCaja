@@ -1,0 +1,66 @@
+@import url("normalize.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    min-height: 100px;
+    max-height: 150px;
+    background-color: #ebe9e9;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main {
+    height: calc(100vh - 200px);
+}
+
+nav,
+aside,
+article {
+    padding: 1rem;
+}
+
+nav,
+aside {
+    height: 100%;
+    width: 25%;
+}
+
+article {
+    width: 50%;
+    height: 100%;
+    order: 1;
+    background-color: #cccbcb;
+}
+
+aside {
+    order: 2;
+    background-color: #dad7d7;
+}
+
+footer {
+    height: 100px;
+    background-color: #ebe9e9;
+}
+
+nav {
+    background-color: #dad7d7;
+}
