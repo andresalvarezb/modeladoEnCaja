@@ -16,21 +16,18 @@ ul {
 
 a {
     text-decoration: none;
-}https://developer.mozilla.org/es/docs/Web/CSS/object-fit#compatibilidad_con_navegadores
+}
 
 p {
     margin-block: 1rem;
 }
 
-figure {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 
-figure > img {
+figure>img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ayudas */
@@ -39,19 +36,22 @@ figure > img {
     justify-content: center;
     align-items: center;
 }
+
 /* ************************ */
 
 .header {
     background-color: salmon;
     flex-direction: column;
     color: #fff;
+    padding-block-end: 1.5rem;
 }
 
 .header__text {
-    margin-block-end: 1rem;
+    margin: 0;
 }
 
 .nav {
+    min-width: 400px;
     justify-content: space-between;
     background-color: rgb(4, 187, 156);
     padding-block: 1rem;
@@ -70,37 +70,41 @@ figure > img {
     color: #fff;
 }
 
+.main {
+    display: flex;
+    min-width: 400px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
 .aside {
-    /* width: 30%; */
-    flex: 1;
-    background-color: rgba(233, 238, 241, 0.4);
     padding: 2rem 1rem;
+    background-color: rgba(233, 238, 241, 0.4);
+    min-width: 300px;
 }
+
 .aside__title {
-    margin-block-end: 0.5rem;
+    margin-block-end: 0.8rem;
 }
 
-.aside__img {
-    margin: 0 auto;
+.aside figure {
+    max-width: 400px;
 }
 
-.aside > figure {
-    width: 400px;
+.aside>figure {
     height: 400px;
 }
 
-.aside__imgs > figure {
-    width: 400px;
+.aside__imgs>figure {
     height: 200px;
     margin-top: 1rem;
 }
 
-.main {
-    display: flex;
+.section {
+    padding-block-start: 2rem;
 }
 
-.section__articles{
-    /* width: 70%; */
-    flex: 5;
-    padding: 2rem 1rem;
+.article__container-img {
+    height: 200px;
 }
