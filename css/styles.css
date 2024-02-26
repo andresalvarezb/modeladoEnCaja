@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    width: 400px;
+    max-width: 400px;
     background-color: rgb(219, 218, 218);
     padding: 1rem;
 }
