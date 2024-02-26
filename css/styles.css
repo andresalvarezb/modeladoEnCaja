@@ -51,7 +51,7 @@ figure>img {
 }
 
 .nav {
-    min-width: 400px;
+    min-width: 300px;
     justify-content: space-between;
     background-color: rgb(4, 187, 156);
     padding-block: 1rem;
@@ -72,7 +72,7 @@ figure>img {
 
 .main {
     display: flex;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 100%;
     flex-wrap: wrap;
     column-gap: 2rem;
@@ -82,14 +82,11 @@ figure>img {
     padding: 2rem 1rem;
     background-color: rgba(233, 238, 241, 0.4);
     min-width: 300px;
+    flex: 1;
 }
 
 .aside__title {
     margin-block-end: 0.8rem;
-}
-
-.aside figure {
-    max-width: 400px;
 }
 
 .aside>figure {
@@ -103,8 +100,20 @@ figure>img {
 
 .section {
     padding-block-start: 2rem;
+    min-width: 300px;
+    flex: 2;
 }
 
 .article__container-img {
     height: 200px;
+}
+
+.section__article {
+    border-bottom: thin solid #bbbbbb;
+    margin-block-end: 2rem;
+}
+
+.footer {
+    height: 80px;
+    background-color: #8d8989;
 }
