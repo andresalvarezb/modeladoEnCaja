@@ -49,14 +49,16 @@ ul {
     font-weight: 600;
 }
 
-.nav__btns span{
+.nav__btns a{
     font-size: 1.6rem;
     width: 4rem;
-    height: 3.5rem;
     display: inline-block;
-    padding: 0.7rem 0.5rem 0.5rem; 
+    padding: 0.7rem; 
     background-color: var(--second-color);
     text-align: center;
-    vertical-align: middle;
     color: var(--text-color);
+}
+
+.nav__btns a:hover {
+    opacity: 0.8;
 }
