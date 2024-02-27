@@ -1,5 +1,16 @@
 @import url("normalize.css");
 
+:root {
+
+    --first-font: Verdana, Geneva, Tahoma, sans-serif;
+    --bg-color-primary: #93d9e9;
+    --box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    --text-color-primary: #fff;
+
+    --bg-color-secondary: rgb(4, 187, 156);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +18,7 @@
 }
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--first-font);
 }
 
 a {
@@ -21,7 +32,7 @@ a {
 }
 
 .container {
-    background-color: #93d9e9;
+    background-color: var(--bg-color-primary);
     gap: 2rem;
     height: 100vh;
 }
@@ -30,8 +41,8 @@ a {
     min-height: 480px;
     width: 300px;
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    background-color: var(--text-color-primary);
 }
 
 .card__title {
